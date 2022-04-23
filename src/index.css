@@ -15,6 +15,7 @@ nav{
   background-color: black;
   padding: 0px 6.25vh;
   position: fixed;
+  z-index: 99999;
 }
 
 .nav_container{
@@ -317,6 +318,7 @@ nav{
   background-size: cover;
   padding: 100px 6.25vh;
   scroll-margin-block-start: 100px;
+  position: relative;
 }
 
 .form_container{
@@ -349,7 +351,7 @@ form h3{
   flex-direction: column;
   margin: 50px 0 0;
 }
-form input{
+.form_text_input{
   margin: 0 auto;
   margin-bottom: 30px;
   width: 100%;
@@ -362,6 +364,18 @@ form input{
   font-weight: 300;
   font-size: 24px;
   color: black;
+}
+
+.cdl_upload{
+  margin: 0 10px 30px;
+}
+
+.cdl_upload input{
+  margin-top: 10px;
+}
+
+.cdl_upload p{
+  font-weight: 700;
 }
 
 form button{
@@ -442,7 +456,7 @@ form button{
   form button{
       font-size: 20px;
   }
-  form input{
+  .form_text_input{
       font-size: 20px;
   }
   .reviewer img{
@@ -542,7 +556,7 @@ form button{
   form{
       width: 100%;
   }
-  form input{
+  .form_text_input{
       height: 50px;
   }
 }
@@ -705,7 +719,7 @@ form button{
   form h3{
       font-size: 18px;
   }
-  form input{
+  .form_text_input{
       font-size: 18px;
       margin-bottom: 30px;
   }
@@ -837,3 +851,46 @@ form button{
 
 
 
+/* loader */
+
+.lds-ring {
+  display: inline-block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -40px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #11D80D;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #11D80D transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

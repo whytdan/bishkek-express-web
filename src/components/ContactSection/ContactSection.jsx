@@ -1,5 +1,6 @@
 import React from 'react';
 import StockImg from '../../assets/img/stock.png';
+import Map from '../Map';
 
 const ContactSection = () => {
   return (
@@ -20,7 +21,7 @@ const ContactSection = () => {
           </div>
         </div>
         <div className="map_container">
-          <div className="map" />
+          <Map />
           <img src={StockImg} alt="stock img" />
         </div>
       </div>

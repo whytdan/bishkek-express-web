@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 import AboutUs from './components/AboutUs';
 import ContactSection from './components/ContactSection';
 import GetInTouchSection from './components/GetInTouchSection';
@@ -7,6 +8,9 @@ import InfoSection from './components/InfoSection';
 import Nav from './components/Nav';
 import NavDrawer from './components/NavDrawer';
 import ReviewsSection from './components/ReviewsSection';
+import 'react-toastify/dist/ReactToastify.css';
+
+toast.configure();
 
 function App() {
   return (
