@@ -616,7 +616,7 @@ form button{
   }
   .hero{
       padding-top: 10vh;
-      height: calc(40vh - 100px);
+      height: 600px;
   }
 
   .hero h1{
