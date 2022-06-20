@@ -116,7 +116,7 @@ nav{
 
 .hero{
   height: calc(100vh - 100px);
-  background-image: url(./assets/img/hero.jpg);
+  background-image: url(./assets/truck-imgs/night-truck.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,7 +195,7 @@ nav{
 }
 
 .info_section{
-  background-image: url(./assets/img/info.png);
+  background-image: url(./assets/truck-imgs/truck3.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

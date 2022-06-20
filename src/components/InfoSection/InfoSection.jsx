@@ -65,7 +65,7 @@ const InfoSection = () => {
         </ul>
       </div>
       <div className="below_info_contacts container">
-        <a href="#">Our contacts</a>
+        <a href="#contact_section">Our contacts</a>
       </div>
     </section>
   );

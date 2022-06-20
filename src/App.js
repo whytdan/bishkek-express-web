@@ -7,7 +7,7 @@ import Hero from './components/Hero';
 import InfoSection from './components/InfoSection';
 import Nav from './components/Nav';
 import NavDrawer from './components/NavDrawer';
-import ReviewsSection from './components/ReviewsSection';
+// import ReviewsSection from './components/ReviewsSection';
 import 'react-toastify/dist/ReactToastify.css';
 
 toast.configure();
@@ -23,7 +23,7 @@ function App() {
         <InfoSection />
         <ContactSection />
         <GetInTouchSection />
-        <ReviewsSection />
+        {/* <ReviewsSection /> */}
       </main>
     </>
   );

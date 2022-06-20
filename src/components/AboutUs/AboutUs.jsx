@@ -7,19 +7,17 @@ const AboutUs = () => {
         <div className="about_us_text">
           <h3>About us</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            accumsan lacus vel facilisis.
+            Bishkek Express inc Was established in 2012 as small trucking
+            company. Since than Bishkek Express inc was growing steadily and
+            today we can provide best service for truckers. We know trucking
+            business from inside and out. The company was created by real
+            truckers for owner operators.
           </p>
         </div>
       </div>
 
       <div className="about_us_text2 container">
-        <p>
-          20 trucks, parking fee for O/O; $200-$300 (South Side), fleet support,
-          24/7 maintenance support
-        </p>
+        <p>Owner with own authority wanted gross $4000 to $12000 a week.</p>
       </div>
     </section>
   );
