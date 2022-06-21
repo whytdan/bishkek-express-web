@@ -28,7 +28,7 @@ const Nav = () => {
               <a href="#get_in_touch_section">Work with us</a>
             </li>
             <li>
-              <a href="#reviews_section">Reviews</a>
+              <a href="#announcement_section">Announcement</a>
             </li>
           </ul>
         </div>
@@ -54,7 +54,7 @@ const Nav = () => {
               <a href="#get_in_touch_section">Work with us</a>
             </li>
             <li>
-              <a href="#reviews_section">Reviews</a>
+              <a href="#announcement_section">Announcement</a>
             </li>
           </ul>
         </div>
