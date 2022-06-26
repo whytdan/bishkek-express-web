@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../../assets/icons/logo.svg';
 
 const Hero = () => {
   return (
@@ -9,6 +10,7 @@ const Hero = () => {
           {' '}
           <span>BE</span> WITH US
         </h2>
+        <img src={Logo} alt="logo" />
       </div>
     </section>
   );

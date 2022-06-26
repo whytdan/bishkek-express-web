@@ -140,6 +140,10 @@ nav {
   color: #0ab506;
 }
 
+.hero_content img {
+  width: 140px;
+}
+
 .about_us_section {
   padding: 100px 6.25vh;
   scroll-margin-block-start: 100px;
@@ -680,6 +684,11 @@ form button {
   .nav_logo img {
     width: 100px;
   }
+
+  .hero_content img {
+    width: 100px;
+  }
+
   .nav_logo {
     width: 90px;
   }
@@ -728,6 +737,11 @@ form button {
   .nav_logo img {
     width: 70px;
   }
+
+  .hero_content img {
+    width: 70px;
+  }
+
   .nav_container {
     width: 90%;
   }
