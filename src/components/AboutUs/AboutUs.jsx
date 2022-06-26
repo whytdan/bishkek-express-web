@@ -17,7 +17,7 @@ const AboutUs = () => {
       </div>
 
       <div className="about_us_text2 container">
-        <p>Owner with own authority wanted gross $4000 to $12000 a week.</p>
+        <p>Owner with own authority wanted gross $8000 + and up</p>
       </div>
     </section>
   );

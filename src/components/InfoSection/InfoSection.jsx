@@ -59,7 +59,7 @@ const InfoSection = () => {
             <h3>Truck lease</h3>
             <p>
               $1200 weekly rate <br />
-              2015-2017 trucks
+              2017 and up trucks
             </p>
           </li>
         </ul>
