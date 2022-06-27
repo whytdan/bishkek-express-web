@@ -7,7 +7,7 @@ const InfoSection = () => {
         <ul>
           <li>
             <h3>Company driver earning</h3>
-            <p>$0.9 per mile (all miles)</p>
+            <p>$0.7-0.9 per mile (all miles)</p>
           </li>
           <li>
             <h3>Gross fee</h3>
@@ -30,7 +30,7 @@ const InfoSection = () => {
           <li>
             <h3>Bonus</h3>
             <p>
-              No ELD FEE of fross is over #10k <br />
+              No ELD FEE if gross is over than $10k/week <br />
               Free Planet Fitness Access
             </p>
           </li>

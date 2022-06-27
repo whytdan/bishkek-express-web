@@ -11,7 +11,7 @@ const ContactSection = () => {
           <p>
             Bishkek Express inc. <br />
             Offiice 3501 W Algonquin Rd, <br />
-            Suite 320 Rolling Meadows, IL 6008 <br />
+            Suite 320 Rolling Meadows, IL 60008 <br />
           </p>
           <div className="address_call">
             <p>HR Erik 773-629-2260</p>

@@ -7,11 +7,11 @@ const AboutUs = () => {
         <div className="about_us_text">
           <h3>About us</h3>
           <p>
-            Bishkek Express inc Was established in 2012 as small trucking
-            company. Since than Bishkek Express inc was growing steadily and
-            today we can provide best service for truckers. We know trucking
-            business from inside and out. The company was created by real
-            truckers for owner operators.
+            Bishkek Express inc was established in 2012 as a small company.
+            Since then Bishkek Express inc is growing steadly and today we can
+            provide the best service for truckers. We know the trucking business
+            from inside and out. The company was built by real truckers for
+            owner operators.
           </p>
         </div>
       </div>
