@@ -20,6 +20,7 @@ nav {
 }
 
 .nav_container {
+  position: relative;
   width: 100%;
   max-width: 1665px;
   margin: 0 auto;
@@ -684,7 +685,9 @@ form button {
     padding: 0 30px;
   }
   .nav_logo img {
-    width: 100px;
+    width: 120px;
+    margin-left: -27px;
+    margin-top: 10px;
   }
 
   .hero_content img {
@@ -737,7 +740,9 @@ form button {
     padding: 0;
   }
   .nav_logo img {
-    width: 70px;
+    width: 100px;
+    margin-left: -25px;
+    margin-top: 10px;
   }
 
   .hero_content img {

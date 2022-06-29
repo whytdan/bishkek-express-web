@@ -17,7 +17,7 @@ const AboutUs = () => {
       </div>
 
       <div className="about_us_text2 container">
-        <p>Owner with own authority wanted gross $8000 + and up</p>
+        <p>Owner $8000 + and up</p>
       </div>
     </section>
   );

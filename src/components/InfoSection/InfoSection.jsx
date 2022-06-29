@@ -37,7 +37,7 @@ const InfoSection = () => {
           <li>
             <h3>Full trucking company service</h3>
             <p>
-              Dispatching, accaunting, ELD <br />
+              Dispatching, accounting, ELD <br />
               Work with us with your own MC <br />
               Gross fee 5%
             </p>
