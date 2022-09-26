@@ -20,7 +20,7 @@ const GetInTouchSection = () => {
   const [formState, setFormState] = useState({
     fullName: '',
     phoneNumber: '',
-    socialSecurityNumber: '',
+    yearExperience: '',
     cdl: null,
   });
 
@@ -38,7 +38,7 @@ const GetInTouchSection = () => {
   const handleSubmit = async (e) => {
     setIsLoading(true);
     e.preventDefault();
-    const { fullName, phoneNumber, socialSecurityNumber, cdl } = formState;
+    const { fullName, phoneNumber, yearExperience, cdl } = formState;
     const cdlBase64 = await toBase64(cdl);
 
     await window.Email.send({
@@ -48,7 +48,7 @@ const GetInTouchSection = () => {
       To: 'bishkek.express.web@gmail.com',
       From: REACT_APP_EMAIL_SERVICE_LOGIN,
       Subject: `New form submussion from bishkekexpress.biz from ${fullName}!`,
-      Body: `Full Name: ${fullName}; Phone number: ${phoneNumber}; Social Security Number: ${socialSecurityNumber};`,
+      Body: `Full Name: ${fullName}; Phone number: ${phoneNumber}; Year experience: ${yearExperience};`,
       Attachments: [
         {
           name: cdl.name,
@@ -59,7 +59,7 @@ const GetInTouchSection = () => {
     setFormState({
       fullName: '',
       phoneNumber: '',
-      socialSecurityNumber: '',
+      yearExperience: '',
       cdl: null,
     });
     cdlInputRef.current.value = '';
@@ -70,50 +70,60 @@ const GetInTouchSection = () => {
   const cdlInputRef = useRef();
 
   return (
-    <section className="get_in_touch_section" id="get_in_touch_section">
+    <section className='get_in_touch_section' id='get_in_touch_section'>
       {isLoading && <Loader />}
-      <div className="container form_container">
-        <img src={Logo} alt="logo" />
+      <div className='container form_container'>
+        <img src={Logo} alt='logo' />
         <form onSubmit={handleSubmit}>
           <h3>
             Let’s start <br />
             work with us!
           </h3>
-          <div className="inputs">
+          <div className='inputs'>
             <input
-              className="form_text_input"
-              type="text"
+              className='form_text_input'
+              type='text'
               value={formState.fullName}
               onChange={handleTextInputChange}
-              placeholder="Full name..."
-              name="fullName"
+              placeholder='Full name...'
+              name='fullName'
               required
             />
             <InputMask
-              className="form_text_input"
-              name="phoneNumber"
-              placeholder="Phone number..."
+              className='form_text_input'
+              name='phoneNumber'
+              placeholder='Phone number...'
               value={formState.phoneNumber}
               onChange={handleTextInputChange}
               mask={'+1 999-9999999'}
               required
             />
 
-            <InputMask
-              className="form_text_input"
-              name="socialSecurityNumber"
-              placeholder="Social security number..."
+            <input
+              className='form_text_input'
+              type='number'
+              value={formState.yearExperience}
+              onChange={handleTextInputChange}
+              placeholder='Year experience...'
+              name='yearExperience'
+              required
+            />
+
+            {/* <InputMask
+              className='form_text_input'
+              name='socialSecurityNumber'
+              placeholder='Year experience'
               value={formState.socialSecurityNumber}
               onChange={handleTextInputChange}
               mask={'999-99-9999'}
               required
-            />
+            /> */}
 
-            <div className="cdl_upload">
+            <div className='cdl_upload'>
               <p>Upload CDL..</p>
               <input
-                type="file"
-                name="cdl"
+                type='file'
+                name='cdl'
                 onChange={handleCdlInputChange}
                 ref={cdlInputRef}
                 required
