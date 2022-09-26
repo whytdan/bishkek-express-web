@@ -1,5 +1,5 @@
 import React from 'react';
-import { toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import AboutUs from './components/AboutUs';
 import ContactSection from './components/ContactSection';
 import GetInTouchSection from './components/GetInTouchSection';
@@ -10,11 +10,10 @@ import NavDrawer from './components/NavDrawer';
 import AnnouncementSection from './components/AnnouncementSection';
 import 'react-toastify/dist/ReactToastify.css';
 
-toast.configure();
-
 function App() {
   return (
     <>
+      <ToastContainer />
       <Nav />
       <NavDrawer />
       <main>
